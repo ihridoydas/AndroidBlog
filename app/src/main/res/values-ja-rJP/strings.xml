@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Androidブログ</string>
+
+    <!--    For MultiLanguage-->
+    <string name="hello">こんにちは</string>
+    <string name="love">愛する</string>
+    <string name="android">アンドロイド</string>
+    <string name="content">Jetpack Compose は、ネイティブ UI を構築するための Android の最新ツールキットです。 Android での UI 開発を簡素化し、加速します。 少ないコード、強力なツール、直感的な Kotlin API を使用して、アプリをすばやく実現します。</string>
+
+</resources>

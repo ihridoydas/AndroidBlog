@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidBlog</string>
+
+    <!--    For MultiLanguage-->
+    <string name="hello">Hello</string>
+    <string name="love">Love</string>
+    <string name="android">Android</string>
+    <string name="content">Jetpack Compose is Android’s modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.</string>
+
+</resources>
