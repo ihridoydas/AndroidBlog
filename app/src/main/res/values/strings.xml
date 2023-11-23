@@ -7,4 +7,12 @@
     <string name="android">Android</string>
     <string name="content">Jetpack Compose is Android’s modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.</string>
 
+    <string name="app_name_a">Android A</string>
+    <string name="app_name_b">Android B</string>
+    <string name="app_name_c">Android C</string>
+    <string name="app_name_d">Android D</string>
+    <string name="app_name_e">Android E</string>
+    <string name="app_name_f">Android F</string>
+    <string name="app_name_g">Android G</string>
+    <string name="app_name_h">Android H</string>
 </resources>

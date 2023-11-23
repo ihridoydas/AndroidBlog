@@ -8,4 +8,12 @@
     <string name="android">অ্যান্ড্রয়েড</string>
     <string name="content">জেটপ্যাক কম্পোজ হল নেটিভ UI তৈরির জন্য অ্যান্ড্রয়েডের আধুনিক টুলকিট। এটি অ্যান্ড্রয়েডে UI ডেভেলপমেন্টকে সহজ করে এবং ত্বরান্বিত করে। কম কোড, শক্তিশালী টুল এবং স্বজ্ঞাত Kotlin API-এর সাহায্যে আপনার অ্যাপকে দ্রুত প্রাণবন্ত করুন।</string>
 
+    <string name="app_name_a">Android A</string>
+    <string name="app_name_b">Android B</string>
+    <string name="app_name_c">Android C</string>
+    <string name="app_name_d">Android D</string>
+    <string name="app_name_e">Android E</string>
+    <string name="app_name_f">Android F</string>
+    <string name="app_name_g">Android G</string>
+    <string name="app_name_h">Android H</string>
 </resources>
