@@ -5,9 +5,8 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import com.hridoy.androidblog.lazyColumnScrollbar.LazyColumnView
 import com.hridoy.androidblog.multiLanguage.MultiLanguage
-import com.hridoy.androidblog.screens.HomeScreen
-import com.hridoy.androidblog.screens.ViewScreen
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -20,7 +19,10 @@ fun MainAnimationNavHost(
         startDestination = startDestination,
     ) {
         screen(ScreenDestinations.HomeScreen.route) {
-            HomeScreen(navController = navController)
+            LazyColumnView()
+//             lazyGridView()
+//            ColumnView()
+          //  HomeScreen(navController = navController)
         }
         screen(ScreenDestinations.MultiLanguage.route) {
             MultiLanguage(

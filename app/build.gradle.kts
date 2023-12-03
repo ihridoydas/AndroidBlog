@@ -41,6 +41,9 @@ android {
     buildFeatures {
         compose = true
     }
+    kapt {
+        correctErrorTypes = true
+    }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
@@ -90,6 +93,10 @@ dependencies {
 
     // Preferences DataStore
     implementation ("androidx.datastore:datastore-preferences:1.0.0")
+
+    //Constraint Layout Compose
+    implementation ("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha13")
+    implementation("androidx.compose.foundation:foundation:1.6.0-beta02")
 
 
 }
