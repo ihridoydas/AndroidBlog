@@ -8,4 +8,14 @@
     <string name="android">অ্যান্ড্রয়েড</string>
     <string name="content">জেটপ্যাক কম্পোজ হল নেটিভ UI তৈরির জন্য অ্যান্ড্রয়েডের আধুনিক টুলকিট। এটি অ্যান্ড্রয়েডে UI ডেভেলপমেন্টকে সহজ করে এবং ত্বরান্বিত করে। কম কোড, শক্তিশালী টুল এবং স্বজ্ঞাত Kotlin API-এর সাহায্যে আপনার অ্যাপকে দ্রুত প্রাণবন্ত করুন।</string>
 
+    <!--    AR-->
+    <string name="sceneview_tap_on_surface">表面をタップしてオブジェクトを配置します。</string>
+    <string name="sceneview_insufficient_features_message">何も見つかりません。\nテクスチャまたは色の多い面にデバイスを向けてください。</string>
+    <string name="sceneview_excessive_motion_message">動きが速すぎます。\速度を落としてください</string>
+    <string name="sceneview_insufficient_light_message">暗すぎます。\n明るい場所に移動してみてください。</string>
+    <string name="sceneview_insufficient_light_android_s_message">暗すぎます。 明るい場所に移動してみてください。\nまた、システム設定でブロック カメラがオフに設定されていることを確認してください。</string>
+    <string name="sceneview_bad_state_message">内部状態が悪いため追跡が失われました。\nAR エクスペリエンスを再起動してみてください。</string>
+    <string name="sceneview_camera_unavailable_message">別のアプリがカメラを使用しています。\nこのアプリをタップするか、他のアプリを閉じてみてください。</string>
+    <string name="sceneview_unknown_tracking_failure">不明な追跡失敗の理由: %1$s</string>
+    <string name="sceneview_camera_permission_required">カメラの許可が必要です</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import com.hridoy.androidblog.ar.augmentedImage.AugmentedImageARScreen
 import com.hridoy.androidblog.multiLanguage.MultiLanguage
 import com.hridoy.androidblog.screens.HomeScreen
 import com.hridoy.androidblog.screens.ViewScreen
@@ -20,7 +21,8 @@ fun MainAnimationNavHost(
         startDestination = startDestination,
     ) {
         screen(ScreenDestinations.HomeScreen.route) {
-            HomeScreen(navController = navController)
+           // HomeScreen(navController = navController)
+            AugmentedImageARScreen(onBackPress = {})
         }
         screen(ScreenDestinations.MultiLanguage.route) {
             MultiLanguage(

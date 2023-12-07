@@ -9,4 +9,14 @@
     <string name="android">アンドロイド</string>
     <string name="content">Jetpack Compose は、ネイティブ UI を構築するための Android の最新ツールキットです。 Android での UI 開発を簡素化し、加速します。 少ないコード、強力なツール、直感的な Kotlin API を使用して、アプリをすばやく実現します。</string>
 
+    <!--    AR-->
+    <string name="sceneview_tap_on_surface">表面をタップしてオブジェクトを配置します。</string>
+    <string name="sceneview_insufficient_features_message">何も見つかりません。\nテクスチャまたは色の多い面にデバイスを向けてください。</string>
+    <string name="sceneview_excessive_motion_message">動きが速すぎます。\速度を落としてください</string>
+    <string name="sceneview_insufficient_light_message">暗すぎます。\n明るい場所に移動してみてください。</string>
+    <string name="sceneview_insufficient_light_android_s_message">暗すぎます。 明るい場所に移動してみてください。\nまた、システム設定でブロック カメラがオフに設定されていることを確認してください。</string>
+    <string name="sceneview_bad_state_message">内部状態が悪いため追跡が失われました。\nAR エクスペリエンスを再起動してみてください。</string>
+    <string name="sceneview_camera_unavailable_message">別のアプリがカメラを使用しています。\nこのアプリをタップするか、他のアプリを閉じてみてください。</string>
+    <string name="sceneview_unknown_tracking_failure">不明な追跡失敗の理由: %1$s</string>
+    <string name="sceneview_camera_permission_required">カメラの許可が必要です</string>
 </resources>

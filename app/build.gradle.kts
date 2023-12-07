@@ -91,5 +91,8 @@ dependencies {
     // Preferences DataStore
     implementation ("androidx.datastore:datastore-preferences:1.0.0")
 
+    //SceneView
+    implementation ("io.github.sceneview:arsceneview:0.9.7")
+
 
 }
