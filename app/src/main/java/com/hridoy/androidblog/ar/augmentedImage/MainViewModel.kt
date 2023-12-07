@@ -2,7 +2,10 @@ package com.hridoy.androidblog.ar.augmentedImage
 
 import android.app.Application
 import android.media.MediaPlayer
+import android.util.Log
+import android.view.MotionEvent
 import android.widget.Toast
+import androidx.compose.runtime.LaunchedEffect
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
@@ -21,7 +24,9 @@ import io.github.sceneview.math.Scale
 import io.github.sceneview.model.GLTFLoader
 import io.github.sceneview.model.ModelInstance
 import io.github.sceneview.model.destroy
+import io.github.sceneview.model.model
 import io.github.sceneview.node.ModelNode
+import io.github.sceneview.renderable.Renderable
 import io.github.sceneview.utils.getResourceUri
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -39,7 +44,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     lateinit var externalTexture: ExternalTexture
     lateinit var mediaPlayer: MediaPlayer
    // private lateinit var newUrl: String
-    private var newRaw by Delegates.notNull<Int>()
+    var newRaw by Delegates.notNull<Int>()
 
     init {
         viewModelScope.launch {
@@ -83,16 +88,20 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
         Toast.makeText(getApplication(),"${trackedAugmentedImage.name}",Toast.LENGTH_LONG).show()
 
-        if(trackedAugmentedImage.name == "cute.jpeg"){
-            newRaw = R.raw.fuji
-            // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/compose_AR_ImageWithDatabase/app/src/main/res/raw/sakura.mp4?raw=true" // your URL here
-        }else if(trackedAugmentedImage.name == "cute1.jpeg"){
-            newRaw = R.raw.sakura
-            // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/"
-        }else if(trackedAugmentedImage.name == "cute2.jpeg"){
-            newRaw = R.raw.matrix
-            // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/"
-        }else{ }
+        when (trackedAugmentedImage.name) {
+            "cute.jpeg" -> {
+                newRaw = R.raw.fuji
+                // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/compose_AR_ImageWithDatabase/app/src/main/res/raw/sakura.mp4?raw=true" // your URL here
+            }
+            "cute1.jpeg" -> {
+                newRaw = R.raw.sakura
+                // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/"
+            }
+            "cute2.jpeg" -> {
+                newRaw = R.raw.matrix
+                // newUrl = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/"
+            }
+        }
 
         //From Url
 //        val url = "https://github.com/ihridoydas/ARSceneViewComposeSample/blob/feature/compose_AR_ImageWithDatabase/app/src/main/res/raw/sakura.mp4?raw=true" // your URL here
