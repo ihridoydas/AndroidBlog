@@ -12,6 +12,13 @@ import com.hridoy.androidblog.navigation.MainAnimationNavHost
 import com.hridoy.androidblog.ui.theme.AndroidBlogTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * Ajhbjh
+ * jbnkj
+ * jbhjhbkj
+ * jkn kj
+ *
+ */
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
