@@ -1,4 +1,4 @@
-package com.hridoy.androidblog.multiLanguage
+package com.hridoy.androidblog.view.ui.multiLanguage
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -48,6 +48,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.hridoy.androidblog.R
+import com.hridoy.androidblog.viewmodel.LanguageViewModel
 
 import kotlinx.coroutines.launch
 import java.util.Locale

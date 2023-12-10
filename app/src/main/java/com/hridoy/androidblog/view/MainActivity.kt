@@ -1,4 +1,4 @@
-package com.hridoy.androidblog
+package com.hridoy.androidblog.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,17 +8,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.hridoy.androidblog.navigation.MainAnimationNavHost
-import com.hridoy.androidblog.ui.theme.AndroidBlogTheme
+import com.hridoy.androidblog.view.navigation.MainAnimationNavHost
+import com.hridoy.androidblog.view.ui.theme.AndroidBlogTheme
 import dagger.hilt.android.AndroidEntryPoint
 
-/**
- * Ajhbjh
- * jbnkj
- * jbhjhbkj
- * jkn kj
- *
- */
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

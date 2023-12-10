@@ -75,14 +75,14 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
     // Use Dagger Hilt
     implementation ("com.google.dagger:hilt-android:2.48.1")
-    kapt ("com.google.dagger:hilt-android-compiler:2.48")
+    kapt ("com.google.dagger:hilt-android-compiler:2.48.1")
     // ViewModel
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     // LiveData
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
-    implementation("androidx.compose.runtime:runtime:1.6.0-beta01")
-    implementation("androidx.compose.runtime:runtime-livedata:1.6.0-beta01")
-    implementation("androidx.compose.runtime:runtime-rxjava2:1.6.0-beta01")
+    implementation("androidx.compose.runtime:runtime:1.6.0-beta02")
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.0-beta02")
+    implementation("androidx.compose.runtime:runtime-rxjava2:1.6.0-beta02")
 
     //kotlin Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
@@ -90,6 +90,17 @@ dependencies {
 
     // Preferences DataStore
     implementation ("androidx.datastore:datastore-preferences:1.0.0")
+
+    //==========================================
+    //For MVVM State Management
+
+    //Coroutine
+    //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //==========================================
 
 
 }

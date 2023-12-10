@@ -1,10 +1,10 @@
-package com.hridoy.androidblog.multiLanguage
+package com.hridoy.androidblog.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.hridoy.androidblog.local.PrefDataStore
+import com.hridoy.androidblog.model.data.local.PrefDataStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

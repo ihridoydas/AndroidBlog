@@ -1,4 +1,4 @@
-package com.hridoy.androidblog.local
+package com.hridoy.androidblog.model.data.local
 
 import android.content.Context
 import androidx.datastore.core.DataStore

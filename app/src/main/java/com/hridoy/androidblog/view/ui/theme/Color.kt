@@ -1,4 +1,4 @@
-package com.hridoy.androidblog.ui.theme
+package com.hridoy.androidblog.view.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
