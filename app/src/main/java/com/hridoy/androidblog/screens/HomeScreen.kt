@@ -15,6 +15,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.hridoy.androidblog.navigation.ScreenDestinations
 
+/**
+ * Ajhbjh
+ * jbnkj
+ * jbhjhbkj
+ * jkn kj
+ *
+ */
 @Composable
 fun HomeScreen(
     navController: NavController,
