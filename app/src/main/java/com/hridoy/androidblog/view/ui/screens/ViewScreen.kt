@@ -1,4 +1,4 @@
-package com.hridoy.androidblog.screens
+package com.hridoy.androidblog.view.ui.screens
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -23,8 +23,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.hridoy.androidblog.multiLanguage.MultiLanguage
-import com.hridoy.androidblog.navigation.ScreenDestinations
+import com.hridoy.androidblog.view.ui.multiLanguage.MultiLanguage
+import com.hridoy.androidblog.view.navigation.ScreenDestinations
 
 
 

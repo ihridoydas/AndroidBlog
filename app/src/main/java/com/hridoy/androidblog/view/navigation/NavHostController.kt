@@ -1,14 +1,7 @@
-package com.hridoy.androidblog.navigation
+package com.hridoy.androidblog.view.navigation
 
 import androidx.navigation.NavHostController
 
-/**
- * Ajhbjh
- * jbnkj
- * jbhjhbkj
- * jkn kj
- *
- */
 fun NavHostController.navigateTo(route: String) = navigate(route) {
     popUpTo(route)
     launchSingleTop = true

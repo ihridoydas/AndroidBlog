@@ -1,4 +1,4 @@
-package com.hridoy.androidblog.navigation
+package com.hridoy.androidblog.view.navigation
 
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalAnimationApi
