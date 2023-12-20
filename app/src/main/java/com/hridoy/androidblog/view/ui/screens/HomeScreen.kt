@@ -30,30 +30,14 @@ fun HomeScreen(
                 modifier = Modifier
                     .size(300.dp, 60.dp),
                 onClick = {
-                    navController?.navigate(ScreenDestinations.MVVMStateUser.route) {
+                    navController?.navigate(ScreenDestinations.ScratchCard.route) {
                         popUpTo(ScreenDestinations.HomeScreen.route) {
                             inclusive = false
                         }
                     }
                 }) {
                 Text(modifier = Modifier, textAlign = TextAlign.Center,
-                    text = "MVVM State Management Users")
-            }
-
-            Spacer(modifier = Modifier.size(10.dp))
-
-            Button(
-                modifier = Modifier
-                    .size(300.dp, 60.dp),
-                onClick = {
-                    navController?.navigate(ScreenDestinations.MVVMStatePost.route) {
-                        popUpTo(ScreenDestinations.HomeScreen.route) {
-                            inclusive = false
-                        }
-                    }
-                }) {
-                Text(modifier = Modifier, textAlign = TextAlign.Center,
-                    text = "MVVM State Management Posts")
+                    text = "Scratch Card")
             }
         }
 
