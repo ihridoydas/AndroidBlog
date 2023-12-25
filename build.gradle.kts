@@ -1,5 +1,3 @@
-import org.jetbrains.dokka.base.DokkaBase
-import org.jetbrains.dokka.base.DokkaBaseConfiguration
 import org.jetbrains.dokka.gradle.DokkaTask
 
 buildscript {
@@ -25,19 +23,12 @@ task("clean"){
     delete(rootProject.buildDir)
 }
 
+// configure all format tasks at once
 tasks.withType<DokkaTask>().configureEach {
-    outputDirectory.set(file("$buildDir/dokka/html"))// docsディレクトリにドキュメントを出力する
-    pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
-        customAssets = listOf(file("my-image.png"))
-        customStyleSheets = listOf(file("my-styles.css"))
-        footerMessage = "(c) 2022 MyOrg"
-    }
-        dokkaSourceSets {
-            configureEach {
-                includes.from("$rootDir/docs/ModuleDoc.md", "$rootDir/docs/PackageDoc.md")
-                named("test") {
-                    sourceRoots.from(file("$rootDir/docs"))
-                }
-            }
-        }
+    moduleName.set(project.name)
+    moduleVersion.set(project.version.toString())
+    failOnWarning.set(false)
+    suppressObviousFunctions.set(true)
+    suppressInheritedMembers.set(false)
+    offlineMode.set(false)
 }
